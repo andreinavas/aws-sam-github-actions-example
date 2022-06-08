@@ -1,1 +1,0 @@
-#aws sandbox britecore credentials
