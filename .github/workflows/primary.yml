@@ -68,5 +68,4 @@ jobs:
             --parameter-overrides \
               'ParameterKey=Name,ParameterValue=example \
               ParameterKey=Version,ParameterValue=${{ steps.vars.outputs.version }}' \
-            --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM \
-            || echo "Nothing to deploy, no changes"
+            --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM
