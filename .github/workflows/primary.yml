@@ -61,3 +61,4 @@ jobs:
           # Create S3 Bucket to store code
           aws s3api head-bucket --bucket "${{ steps.vars.outputs.environment }}" 2>/dev/null \
             || aws s3 mb s3://${{ steps.vars.outputs.environment }}
+          aws lambda list-functions --max-items 10
